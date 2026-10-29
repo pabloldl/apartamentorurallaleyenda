@@ -1,49 +1,45 @@
-# Apartamento Rural La Leyenda
+﻿# Apartamento Rural La Leyenda
 
-Web local de HTML5, CSS3 y JavaScript vanilla. Abrir `index.html` con Live Server o directamente en un navegador. Sin instalación, compilación, backend ni despliegue. Todos los recursos necesarios son locales.
+Rediseño local de 29 de octubre de 2026. HTML5, CSS3 y JavaScript vanilla, compatible con Live Server y sin compilación. Abrir index.html. Se mantiene la etiqueta robots noindex, nofollow.
 
-## Concepto y decisiones
+## Diseño
 
-Atlas contemporáneo de cuatro capítulos: elegir el lugar, conocer el apartamento, explorar y preparar el viaje. Índice lateral con progreso y capítulo activo; en móvil, índice desplegable de dos columnas con cierre por Escape y retorno del foco. Portada con una lámina independiente del título, ficha editorial sin tarjetas, notas nativas desplegables, paisaje a sangre lateral y cierre de contraportada. Literata, sans del sistema y monoespaciada para referencias. Paleta pergamino, bosque, cobre y pizarra.
+Identidad íntima en marfil, cacao y verde suave, con Georgia y sans del sistema. Portada dominada por el salón, presentación fotográfica, galería asimétrica, detalles observables, ubicación y consulta de estancia. Navegación visible en móvil, sin menú oculto. Revelados discretos mediante IntersectionObserver y respeto a prefers-reduced-motion. Contenido y enlaces de imágenes utilizables sin JavaScript.
 
-Revelado inicial de lámina mediante máscara, línea trazada al entrar en el capítulo y marcadores con respuesta al puntero. Sin scroll secuestrado. Todo el contenido permanece visible sin JavaScript; las animaciones se anulan con `prefers-reduced-motion`.
+## Fotografías
 
-## Investigación — 27 de octubre de 2026
+Se inspeccionaron visualmente las siete imágenes de img/ mediante hoja de contacto. No existe carpeta imgs/. Se conservan todos los originales.
 
-- [Ficha de La Leyenda en Booking.com](https://www.booking.com/hotel/es/apartamento-rural-la-leyenda-el-bosque1.es.html): coincide el nombre y El Bosque. Fuente del equipamiento, superficie, dormitorios, baños, normas y enlace real para consultar y reservar. No se reproducen valoraciones ni precios.
-- La ficha publica Los Membrillos, 4, Primero C, y VFT/CA/16064. Se conservan como referencias de investigación; la web presenta solo la ubicación general facilitada. La licencia no se contrastó con el registro administrativo y por eso no se publica como verificada en la web.
-- La capacidad y las condiciones para niños deben consultarse para la composición concreta del grupo; se omite una cifra de ocupación en la web.
-- La información de apertura de piscina contiene fechas contradictorias dentro de la ficha. Se indica únicamente que es comunitaria y de temporada, con confirmación en plataforma.
-- No se localizó teléfono, correo, WhatsApp, web independiente ni perfil social oficial inequívoco en las búsquedas realizadas. No se han inventado canales. Booking.com es el canal operativo publicado, sin presentarlo como web oficial del negocio.
-- Las fotografías auténticas del apartamento pueden verse en Booking.com, pero no se encontró autorización para reutilizarlas. No se descargaron ni sustituyeron por interiores ajenos. El gráfico de la ficha es un símbolo editorial expresamente identificado como tal, no un plano del inmueble.
-- [Junta de Andalucía: sendero Río Majaceite](https://www.juntadeandalucia.es/medioambiente/portal/web/ventanadelvisitante/detalle-buscador-mapa/-/asset_publisher/Jlbxh2qB3NwR/content/r-c3-ado-majaceite/255035): vínculo El Bosque–Benamahoma, contexto natural y consulta de indicaciones vigentes. No se ofrecen actividades ni se calculan distancias desde el apartamento.
-- Google Maps sitúa el municipio. No existe marcador ni coordenada inventada de la propiedad.
+- 356320634.jpg (1024 × 768, 109 KB): portada y acceso ampliable en la galería; salón con iluminación natural y composición más completa.
+- 355721951.jpg (1024 × 768, 110 KB): presentación; rincón con sofá y balcón.
+- 356437784.jpg (576 × 768, 86 KB): fotografía vertical en galería, sin forzar un recorte horizontal.
+- 355801789.jpg (1024 × 768, 183 KB): exterior y jardines de la urbanización.
+- 389240797.jpg (1024 × 576, 109 KB): piscina de las zonas comunes.
+- pueblo.jpg: contexto de El Bosque, identificado como entorno, con créditos CC BY-SA 4.0 de El Pantera en el pie y procedencia conservada en img/sources.json.
+- portada.jpg: descartada del diseño por su encuadre desde carretera y menor afinidad con la experiencia interior.
 
-## Fotografías y tipografía
+Las nuevas imágenes se consideran material facilitado por el usuario para este proyecto. No se han obtenido imágenes de otras propiedades. Los JPEG nuevos ya tienen pesos contenidos y no se recomprimen para evitar pérdida innecesaria; no se generaron WebP. Lazy loading fuera del hero, tamaños intrínsecos, alt descriptivos y prioridad alta en portada. La misma imagen del salón aparece como portada y en la galería para poder ampliarla.
 
-Ambas fotos representan el entorno y así se identifican en pies, alternativas y colofón. No son vistas desde el apartamento. Autor: **El Pantera**. Licencia: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Los archivos adaptados mantienen la misma licencia.
+## Datos y reserva
 
-| Archivo | Original | Tratamiento |
-| --- | --- | --- |
-| `img/pueblo.jpg` | [ElBosque-P1050286.JPG](https://commons.wikimedia.org/wiki/File:ElBosque-P1050286.JPG) | Miniatura de Commons, JPEG 1920 × 1440; encuadre CSS y saturación reducida. |
-| `img/portada.jpg` | [ElBosqueDesdeCarretera.jpg](https://commons.wikimedia.org/wiki/File:ElBosqueDesdeCarretera.jpg) | Miniatura de Commons, JPEG 1920 × 1440; encuadre CSS y saturación reducida. |
+Se mantiene la ubicación general El Bosque, Cádiz, y el enlace existente a Booking.com:
+https://www.booking.com/hotel/es/apartamento-rural-la-leyenda-el-bosque1.es.html
 
-Metadatos de procedencia y licencia conservados en `img/sources.json`. Se verificaron formato JPEG, decodificación, dimensiones y carga en Chrome. Se descartaron las primeras candidatas por contenido inadecuado o reutilización documentada. Las dos fuentes finales no aparecieron en la búsqueda de identificadores en los README de los otros proyectos; esto no garantiza detectar imágenes ajenas sin procedencia registrada.
+La consulta automatizada a Booking.com el 29 de octubre devolvió una comprobación antirrobot; no se pudo revalidar la ficha actual ni completar una reserva. Los datos previos de superficie, número de dormitorios/baños, cocina, Wi-Fi y normas se han retirado del contenido por no haber podido contrastarlos en esta revisión. Se describen elementos visibles en las fotografías. La piscina se identifica como común y se pide consultar apertura y condiciones. No hay precios, calendarios, valoraciones ni contactos inventados. El mapa sitúa únicamente el municipio. Se conservan metadatos útiles y JSON-LD de ubicación general; Open Graph usa la foto del salón. Antes de publicar, og:image necesitará la URL absoluta del dominio definitivo.
 
-Literata procede de [Google Fonts](https://github.com/google/fonts/tree/main/ofl/literata), bajo SIL Open Font License 1.1. Archivo de licencia: `css/OFL-Literata.txt`. Favicon SVG original.
+## Verificación ejecutada
 
-## Verificación realizada
+- node --check js/script.js: correcto.
+- Comprobación estática: recursos locales existentes, JSON-LD válido y noindex presente.
+- Chrome headless: 375, 768, 1440 y 1920 px; sin desbordamiento horizontal, h1 dentro de pantalla, todos los enlaces internos con destino y todas las fotografías de contenido cargadas. La imagen vacía del visor no tiene src hasta abrirlo; no es un recurso fallido.
+- Galería: apertura, siguiente/anterior por botones, flecha de teclado, Escape mediante protocolo de entrada del navegador, cierre, retorno del foco tras procesarse close y gesto táctil mediante TouchEvent simulado. No equivale a una prueba en dispositivo físico.
+- prefers-reduced-motion: desplazamiento suave desactivado.
+- Cero excepciones de ejecución capturadas en Runtime de Chrome. No se ha realizado auditoría exhaustiva de consola ni de accesibilidad.
+- Capturas a las cuatro anchuras; revisión visual de portada en 375 y 1440, presentación en 1440 y galería/cierre en 375. Evidencias locales en .qa/, excluidas de Git.
+- Safari/iPhone real no probado. No se compararon visualmente las otras webs; el trabajo se restringió a esta carpeta.
 
-- `node --check js/script.js`: correcto.
-- Chrome headless real: 375, 768, 1440 y 1920 px. Sin desbordamiento horizontal; título dentro del viewport; ambas imágenes decodificadas; cero destinos internos inexistentes.
-- Pruebas funcionales en Chrome: abrir índice móvil, cerrar por Escape, desplegar notas y anular animación con movimiento reducido. Todas correctas.
-- Capturas generadas a las cuatro anchuras; revisión visual directa de portada en 375 y 1440 px y ficha de apartamento en 1440 px. Evidencias y script de comprobación en `.qa/`, excluidos del control de versiones. El servidor y Chrome usados para pruebas se cerraron.
-- Se revisaron las fuentes HTML/CSS de Las Buganvillas y La Cascada: se evita su navegación superior, composición de portada, galería, contacto y pie. No se realizó comparación visual en navegador de las webs anteriores.
-- SEO: título, descripción, Open Graph y JSON-LD LodgingBusiness con ubicación general. Antes de publicar, añadir dominio definitivo y convertir `og:image` en URL absoluta; no se inventa un dominio ni se añade canonical provisional.
-- Accesibilidad: idioma, landmarks, jerarquía, alternativas, enlace de salto, focus visible, controles nativos y soporte de teclado. No se afirma auditoría completa con lector de pantalla.
+## Pendiente de confirmación
 
-## Pendiente del propietario
+Condiciones vigentes de reserva, apertura/uso de piscina y cualquier canal directo de teléfono, correo o WhatsApp que se quiera incorporar. No se necesita formulario ni backend para el enlace a Booking.com.
 
-Teléfono y correo, autorización de fotografías del alojamiento, confirmación de licencia administrativa y condiciones actualizadas. No son necesarios para que el enlace actual a la plataforma funcione. Revalidar la ficha y las normas antes de una futura publicación.
-
-No se modificaron otros proyectos. No se generó configuración de hosting ni se desplegó la web.
+Archivos de producto modificados: index.html, css/style.css, js/script.js, favicon.svg y este README. Recursos originales conservados. Sin despliegues, commits ni pushes. El servidor y el navegador propios de las pruebas se cerraron.
